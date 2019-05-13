@@ -1,0 +1,139 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXFileReference section */
+		17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
+		17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
+		17FD0B4401B609090A58D252 /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
+		17FD0BBD9E7297E324621CC7 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
+		17FD0E95FCDEF698C55DD769 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		17FD01B73F68EB3CDF58DDEA /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */,
+				17FD0B4401B609090A58D252 /* Base - Release.xcconfig */,
+			);
+			name = Configuration;
+			path = dependency/Git/Xenomorph/source/Configuration;
+			sourceTree = SOURCE_ROOT;
+		};
+		17FD02BE66A4359049E9F628 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				17FD03EC67537421B2C7D730 /* macOS */,
+				17FD0E95FCDEF698C55DD769 /* Test.xcconfig */,
+			);
+			name = Target;
+			path = dependency/Git/Xenomorph/source/Target;
+			sourceTree = SOURCE_ROOT;
+		};
+		17FD03EC67537421B2C7D730 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */,
+				17FD0BBD9E7297E324621CC7 /* macOS - Application.xcconfig */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		17FD04C0CBE1EE65EAEDF024 /* source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		17FD06CD2B25A12116504B7D /* accessory */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0E501FD9799673DEB5F2 /* configuration */,
+			);
+			path = accessory;
+			sourceTree = "<group>";
+		};
+		17FD06FEE44FB4A2372F1E37 /* dependency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dependency;
+			sourceTree = "<group>";
+		};
+		17FD0E501FD9799673DEB5F2 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17FD01B73F68EB3CDF58DDEA /* Configuration */,
+				17FD02BE66A4359049E9F628 /* Target */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		E6188A8722C7BB250034E471 = {
+			isa = PBXGroup;
+			children = (
+				17FD06CD2B25A12116504B7D /* accessory */,
+				17FD06FEE44FB4A2372F1E37 /* dependency */,
+				17FD04C0CBE1EE65EAEDF024 /* source */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		E6188A8822C7BB250034E471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = E6188A8B22C7BB250034E471 /* Build configuration list for PBXProject "Rex" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+			);
+			mainGroup = E6188A8722C7BB250034E471;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		E6188A8C22C7BB250034E471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E6188A8D22C7BB250034E471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0B4401B609090A58D252 /* Base - Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6188A8B22C7BB250034E471 /* Build configuration list for PBXProject "Rex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6188A8C22C7BB250034E471 /* Debug */,
+				E6188A8D22C7BB250034E471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6188A8822C7BB250034E471 /* Project object */;
+}
