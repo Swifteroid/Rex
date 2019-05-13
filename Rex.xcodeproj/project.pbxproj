@@ -6,15 +6,67 @@
 	objectVersion = 51;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17FD0CFF21C718B9328112B7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C5B8D19B0DDAD869144 /* main.swift */; };
+		17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD048EEFC4204D423669F8 /* Test.swift */; };
+		E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6188A9422C7C0880034E471 /* Rex.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6188A9F22C7C0880034E471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6188A8822C7BB250034E471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6188A9322C7C0880034E471;
+			remoteInfo = Rex;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		17FD03D96CD33E1B243C997C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
+		17FD0486C6052580C9CA64C9 /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
+		17FD048EEFC4204D423669F8 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
 		17FD0B4401B609090A58D252 /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0BBD9E7297E324621CC7 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
+		17FD0C5B8D19B0DDAD869144 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		17FD0E95FCDEF698C55DD769 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		17FD0F993C06679B32AC2611 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
+		17FD0FCB6FFAB97BD20D7406 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		E6188A9422C7C0880034E471 /* Rex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6188A9D22C7C0880034E471 /* Tst - Rex.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tst - Rex.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		E6188A9122C7C0880034E471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6188A9A22C7C0880034E471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		17FD01A216BAA4B6535E71CF /* info */ = {
+			isa = PBXGroup;
+			children = (
+				17FD03D96CD33E1B243C997C /* test.plist */,
+				17FD0486C6052580C9CA64C9 /* framework.plist */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
 		17FD01B73F68EB3CDF58DDEA /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +99,7 @@
 		17FD04C0CBE1EE65EAEDF024 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				17FD0ABA20BF827887152BC0 /* Rex */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -55,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				17FD0E501FD9799673DEB5F2 /* configuration */,
+				17FD01A216BAA4B6535E71CF /* info */,
 			);
 			path = accessory;
 			sourceTree = "<group>";
@@ -62,8 +116,28 @@
 		17FD06FEE44FB4A2372F1E37 /* dependency */ = {
 			isa = PBXGroup;
 			children = (
+				17FD0FCB6FFAB97BD20D7406 /* Cartfile */,
+				17FD0F993C06679B32AC2611 /* Cartfile.private */,
+				17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */,
 			);
 			path = dependency;
+			sourceTree = "<group>";
+		};
+		17FD0ABA20BF827887152BC0 /* Rex */ = {
+			isa = PBXGroup;
+			children = (
+				17FD0C5B8D19B0DDAD869144 /* main.swift */,
+				17FD0B4B7801A1CD7B9AB010 /* Test */,
+			);
+			path = Rex;
+			sourceTree = "<group>";
+		};
+		17FD0B4B7801A1CD7B9AB010 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				17FD048EEFC4204D423669F8 /* Test.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		17FD0E501FD9799673DEB5F2 /* configuration */ = {
@@ -80,37 +154,138 @@
 			children = (
 				17FD06CD2B25A12116504B7D /* accessory */,
 				17FD06FEE44FB4A2372F1E37 /* dependency */,
+				E6188A9522C7C0880034E471 /* product */,
 				17FD04C0CBE1EE65EAEDF024 /* source */,
 			);
 			sourceTree = "<group>";
 		};
+		E6188A9522C7C0880034E471 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				E6188A9422C7C0880034E471 /* Rex.framework */,
+				E6188A9D22C7C0880034E471 /* Tst - Rex.xctest */,
+			);
+			name = product;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E6188A8F22C7C0880034E471 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E6188A9322C7C0880034E471 /* Fmw - Rex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6188AA622C7C0880034E471 /* Build configuration list for PBXNativeTarget "Fmw - Rex" */;
+			buildPhases = (
+				E6188A8F22C7C0880034E471 /* Headers */,
+				E6188A9022C7C0880034E471 /* Sources */,
+				E6188A9122C7C0880034E471 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fmw - Rex";
+			productName = Rex;
+			productReference = E6188A9422C7C0880034E471 /* Rex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6188A9C22C7C0880034E471 /* Tst - Rex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6188AA922C7C0880034E471 /* Build configuration list for PBXNativeTarget "Tst - Rex" */;
+			buildPhases = (
+				E6188A9922C7C0880034E471 /* Sources */,
+				E6188A9A22C7C0880034E471 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6188AA022C7C0880034E471 /* PBXTargetDependency */,
+			);
+			name = "Tst - Rex";
+			productName = RexTests;
+			productReference = E6188A9D22C7C0880034E471 /* Tst - Rex.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E6188A8822C7BB250034E471 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					E6188A9322C7C0880034E471 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E6188A9C22C7C0880034E471 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
 			};
 			buildConfigurationList = E6188A8B22C7BB250034E471 /* Build configuration list for PBXProject "Rex" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 			);
 			mainGroup = E6188A8722C7BB250034E471;
+			productRefGroup = E6188A9522C7C0880034E471 /* product */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E6188A9322C7C0880034E471 /* Fmw - Rex */,
+				E6188A9C22C7C0880034E471 /* Tst - Rex */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6188A9022C7C0880034E471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD0CFF21C718B9328112B7 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6188A9922C7C0880034E471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6188AA022C7C0880034E471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6188A9322C7C0880034E471 /* Fmw - Rex */;
+			targetProxy = E6188A9F22C7C0880034E471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E6188A8C22C7BB250034E471 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -118,6 +293,53 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD0B4401B609090A58D252 /* Base - Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E6188AA722C7C0880034E471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */;
+			buildSettings = {
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Rex;
+			};
+			name = Debug;
+		};
+		E6188AA822C7C0880034E471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */;
+			buildSettings = {
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = Rex;
+			};
+			name = Release;
+		};
+		E6188AAA22C7C0880034E471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0E95FCDEF698C55DD769 /* Test.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
+			};
+			name = Debug;
+		};
+		E6188AAB22C7C0880034E471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17FD0E95FCDEF698C55DD769 /* Test.xcconfig */;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Release;
 		};
@@ -129,6 +351,24 @@
 			buildConfigurations = (
 				E6188A8C22C7BB250034E471 /* Debug */,
 				E6188A8D22C7BB250034E471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6188AA622C7C0880034E471 /* Build configuration list for PBXNativeTarget "Fmw - Rex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6188AA722C7C0880034E471 /* Debug */,
+				E6188AA822C7C0880034E471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6188AA922C7C0880034E471 /* Build configuration list for PBXNativeTarget "Tst - Rex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6188AAA22C7C0880034E471 /* Debug */,
+				E6188AAB22C7C0880034E471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
