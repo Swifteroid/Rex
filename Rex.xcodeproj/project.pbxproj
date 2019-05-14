@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17FD01A2C7D2CE9528442427 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02EC39B4BE3FF495E5A0 /* Observation.swift */; };
 		17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */; };
 		17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ACF616620CA54136469 /* Disposable.swift */; };
 		17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD048EEFC4204D423669F8 /* Test.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Reactive.swift; sourceTree = "<group>"; };
+		17FD02EC39B4BE3FF495E5A0 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		17FD03D96CD33E1B243C997C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Framework.xcconfig"; sourceTree = "<group>"; };
 		17FD0486C6052580C9CA64C9 /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				17FD0B4B7801A1CD7B9AB010 /* Test */,
 				17FD0ACF616620CA54136469 /* Disposable.swift */,
 				17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */,
+				17FD02EC39B4BE3FF495E5A0 /* Observation.swift */,
 			);
 			path = Rex;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */,
 				17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */,
+				17FD01A2C7D2CE9528442427 /* Observation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
