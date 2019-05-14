@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */; };
+		17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ACF616620CA54136469 /* Disposable.swift */; };
 		17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD048EEFC4204D423669F8 /* Test.swift */; };
 		E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6188A9422C7C0880034E471 /* Rex.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		17FD048EEFC4204D423669F8 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		17FD0A2B58064B7A548F0F17 /* Base - Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Debug.xcconfig"; sourceTree = "<group>"; };
+		17FD0ACF616620CA54136469 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		17FD0B4401B609090A58D252 /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0BBD9E7297E324621CC7 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
 		17FD0E95FCDEF698C55DD769 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				17FD0B4B7801A1CD7B9AB010 /* Test */,
+				17FD0ACF616620CA54136469 /* Disposable.swift */,
 				17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */,
 			);
 			path = Rex;
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */,
 				17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
