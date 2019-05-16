@@ -12,6 +12,7 @@
 		17FD0695A84D0D383F5DFA07 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DCEE66390D549A99141 /* Property.swift */; };
 		17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */; };
 		17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ACF616620CA54136469 /* Disposable.swift */; };
+		17FD0CDED6A76459779050C7 /* Extension.AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C43ED368BC5BFA6F4F5 /* Extension.AppKit.swift */; };
 		17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD048EEFC4204D423669F8 /* Test.swift */; };
 		E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6188A9422C7C0880034E471 /* Rex.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		17FD0ACF616620CA54136469 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		17FD0B4401B609090A58D252 /* Base - Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base - Release.xcconfig"; sourceTree = "<group>"; };
 		17FD0BBD9E7297E324621CC7 /* macOS - Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS - Application.xcconfig"; sourceTree = "<group>"; };
+		17FD0C43ED368BC5BFA6F4F5 /* Extension.AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.AppKit.swift; sourceTree = "<group>"; };
 		17FD0DCEE66390D549A99141 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		17FD0E95FCDEF698C55DD769 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		17FD0F993C06679B32AC2611 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
@@ -140,6 +142,7 @@
 				17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */,
 				17FD02EC39B4BE3FF495E5A0 /* Observation.swift */,
 				17FD0DCEE66390D549A99141 /* Property.swift */,
+				17FD0C43ED368BC5BFA6F4F5 /* Extension.AppKit.swift */,
 			);
 			path = Rex;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */,
 				17FD01A2C7D2CE9528442427 /* Observation.swift in Sources */,
 				17FD0695A84D0D383F5DFA07 /* Property.swift in Sources */,
+				17FD0CDED6A76459779050C7 /* Extension.AppKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

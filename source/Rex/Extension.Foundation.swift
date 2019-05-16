@@ -1,6 +1,6 @@
 import Foundation
-import ReactiveSwift
 import ReactiveCocoa
+import ReactiveSwift
 
 extension Reactive where Base: NSObject {
     /// Creates the signal for the given `Swift.KeyPath` changes. The property must be dynamic and the key path must return 
