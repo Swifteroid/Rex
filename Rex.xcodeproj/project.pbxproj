@@ -325,7 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */;
 			buildSettings = {
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = Rex;
 			};
 			name = Debug;
@@ -334,7 +334,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17FD040F8206473E5234C955 /* macOS - Framework.xcconfig */;
 			buildSettings = {
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = Rex;
 			};
 			name = Release;
