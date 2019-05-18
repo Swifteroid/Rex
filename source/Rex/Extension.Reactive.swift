@@ -2,6 +2,10 @@ import Foundation
 import ReactiveSwift
 
 extension Signal {
+    public typealias Pipe = (output: Signal<Value, Never>, input: Signal<Value, Never>.Observer)
+}
+
+extension Signal {
 
     /// Maps signal into void.
     public func void() -> Signal<(), Error> {
