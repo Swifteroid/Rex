@@ -4,7 +4,7 @@ import ReactiveCocoa
 
 extension PropertyProtocol {
     /// Sent when the property value changes.
-    public var trigger: Signal<(), Never> { return self.signal.void() }
+    public var changed: Signal<(), Never> { return self.signal.void() }
 }
 
 public protocol PropertyProxyProtocol: PropertyProtocol {
