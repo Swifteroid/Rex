@@ -10,9 +10,19 @@ extension Signal {
     public func void() -> Signal<(), Error> { return self.map({ _ in }) }
 }
 
+extension Signal where Value == () {
+    /// Returns new signal with no value.
+    public func void() -> Signal<(), Error> { return self }
+}
+
 extension SignalProducer {
     /// Returns new producer with no value.
     public func void() -> SignalProducer<(), Error> { return self.map({ _ in }) }
+}
+
+extension SignalProducer where Value == () {
+    /// Returns new producer with no value.
+    public func void() -> SignalProducer<(), Error> { return self }
 }
 
 extension Signal {
