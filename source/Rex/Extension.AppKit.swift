@@ -4,7 +4,6 @@ import ReactiveCocoa
 import ReactiveSwift
 
 extension Reactive where Base: NSControl {
-
     /// Sent when the control sends an action.
     public var didSendAction: Signal<(), Never> { return self.trigger(for: #selector(self.base.sendAction(_:to:))) }
 }

@@ -17,7 +17,6 @@ public enum ObservationMode {
 }
 
 extension Signal {
-
     /// Forwards all events onto corresponding observation scheduler.
     private func observe(in mode: ObservationMode?) -> Signal<Value, Error> {
         guard let mode: ObservationMode = mode else { return self }
@@ -71,7 +70,6 @@ extension Signal {
 }
 
 extension SignalProducer {
-
     /// Forwards all events onto corresponding observation scheduler.
     private func observe(in mode: ObservationMode?) -> SignalProducer<Value, Error> {
         guard let mode: ObservationMode = mode else { return self }
