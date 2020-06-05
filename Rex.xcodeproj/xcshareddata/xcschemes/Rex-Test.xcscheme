@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6188A9322C7C0880034E471"
-               BuildableName = "Rex.framework"
-               BlueprintName = "Fmw - Rex"
+               BlueprintIdentifier = "E6188A9C22C7C0880034E471"
+               BuildableName = "Rex-Test.xctest"
+               BlueprintName = "Rex-Test"
                ReferencedContainer = "container:Rex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,23 +33,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E6188A9C22C7C0880034E471"
-               BuildableName = "Tst - Rex.xctest"
-               BlueprintName = "Tst - Rex"
+               BuildableName = "Rex-Test.xctest"
+               BlueprintName = "Rex-Test"
                ReferencedContainer = "container:Rex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6188A9322C7C0880034E471"
-            BuildableName = "Rex.framework"
-            BlueprintName = "Fmw - Rex"
-            ReferencedContainer = "container:Rex.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -61,17 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6188A9322C7C0880034E471"
-            BuildableName = "Rex.framework"
-            BlueprintName = "Fmw - Rex"
-            ReferencedContainer = "container:Rex.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -79,15 +57,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E6188A9322C7C0880034E471"
-            BuildableName = "Rex.framework"
-            BlueprintName = "Fmw - Rex"
-            ReferencedContainer = "container:Rex.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

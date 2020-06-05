@@ -7,13 +7,16 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForTesting = "YES">
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E6188A9C22C7C0880034E471"
-               BuildableName = "Tst - Rex.xctest"
-               BlueprintName = "Tst - Rex"
+               BlueprintIdentifier = "E6188A9322C7C0880034E471"
+               BuildableName = "Rex.framework"
+               BlueprintName = "Rex"
                ReferencedContainer = "container:Rex.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -24,20 +27,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6188A9322C7C0880034E471"
+            BuildableName = "Rex.framework"
+            BlueprintName = "Rex"
+            ReferencedContainer = "container:Rex.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E6188A9C22C7C0880034E471"
-               BuildableName = "Tst - Rex.xctest"
-               BlueprintName = "Tst - Rex"
+               BuildableName = "Rex-Test.xctest"
+               BlueprintName = "Rex-Test"
                ReferencedContainer = "container:Rex.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -49,8 +59,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6188A9322C7C0880034E471"
+            BuildableName = "Rex.framework"
+            BlueprintName = "Rex"
+            ReferencedContainer = "container:Rex.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -58,6 +75,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6188A9322C7C0880034E471"
+            BuildableName = "Rex.framework"
+            BlueprintName = "Rex"
+            ReferencedContainer = "container:Rex.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

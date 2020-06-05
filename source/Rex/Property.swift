@@ -100,7 +100,7 @@ final public class MutablePropertyProxy<Base: AnyObject & ReactiveExtensionsProv
         set { self.setter.set(newValue, in: self.base) }
     }
 
-    /// The lifetime of the property.
+    /// The lifetime of the property is the same as of the base object.
     public var lifetime: Lifetime {
         return self.base.reactive.lifetime
     }
