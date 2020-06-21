@@ -107,7 +107,7 @@ final public class MutablePropertyProxy<Base: AnyObject & ReactiveExtensionsProv
 
     /// The property's binding target.
     public var bindingTarget: BindingTarget<Value> {
-        return BindingTarget(on: self.scheduler ?? ImmediateScheduler(), lifetime: self.lifetime, action: { self.setter.set($0, in: self.base) })
+        return BindingTarget(on: self.scheduler ?? ImmediateScheduler(), lifetime: self.lifetime, action: { [weak self] in if let self = self { self.setter.set($0, in: self.base) } })
     }
 }
 

@@ -12,6 +12,7 @@
 		17FD0695A84D0D383F5DFA07 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0DCEE66390D549A99141 /* Property.swift */; };
 		17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD002F023FA8782AC485B5 /* Extension.Reactive.swift */; };
 		17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0ACF616620CA54136469 /* Disposable.swift */; };
+		17FD091227C21AAA82D49ABF /* Test.Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0A2A6C0CD37A1E4AD786 /* Test.Property.swift */; };
 		17FD0CDED6A76459779050C7 /* Extension.AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C43ED368BC5BFA6F4F5 /* Extension.AppKit.swift */; };
 		17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD048EEFC4204D423669F8 /* Test.swift */; };
 		E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6188A9422C7C0880034E471 /* Rex.framework */; };
@@ -35,6 +36,7 @@
 		17FD0486C6052580C9CA64C9 /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
 		17FD048EEFC4204D423669F8 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
+		17FD0A2A6C0CD37A1E4AD786 /* Test.Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Property.swift; sourceTree = "<group>"; };
 		17FD0ACF616620CA54136469 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		17FD0C43ED368BC5BFA6F4F5 /* Extension.AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.AppKit.swift; sourceTree = "<group>"; };
 		17FD0DCEE66390D549A99141 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				17FD048EEFC4204D423669F8 /* Test.swift */,
+				17FD0A2A6C0CD37A1E4AD786 /* Test.Property.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -244,12 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */,
+				17FD0CDED6A76459779050C7 /* Extension.AppKit.swift in Sources */,
 				17FD00FB60C9BE8E13769013 /* Extension.Foundation.swift in Sources */,
 				17FD0767F49FC5D194BC7529 /* Extension.Reactive.swift in Sources */,
+				17FD0872D7436FDDEED989DD /* Disposable.swift in Sources */,
 				17FD01A2C7D2CE9528442427 /* Observation.swift in Sources */,
 				17FD0695A84D0D383F5DFA07 /* Property.swift in Sources */,
-				17FD0CDED6A76459779050C7 /* Extension.AppKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17FD0D3E67B3DB7D40B4E048 /* Test.swift in Sources */,
+				17FD091227C21AAA82D49ABF /* Test.Property.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
