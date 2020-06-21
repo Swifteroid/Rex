@@ -27,11 +27,11 @@ extension Reactive where Base: NSObject {
 extension Reactive where Base: AnyObject {
     /// Returns give notification signal for current object mapping it to object itself to avoid object capturing inside a block.
     public func notifications(forName name: Notification.Name) -> Signal<Notification, Never> {
-        return NotificationCenter.default.reactive.notifications(forName: name, object: self.base).take(duringLifetimeOf: self.base)
+        NotificationCenter.default.reactive.notifications(forName: name, object: self.base).take(duringLifetimeOf: self.base)
     }
 
     /// Returns give notification signal for current object mapping it to object itself to avoid object capturing inside a block.
     public func notifications(forNames names: [Notification.Name]) -> Signal<Notification, Never> {
-        return Signal.merge(names.map({ NotificationCenter.default.reactive.notifications(forName: $0, object: self.base) })).take(duringLifetimeOf: self.base)
+        Signal.merge(names.map({ NotificationCenter.default.reactive.notifications(forName: $0, object: self.base) })).take(duringLifetimeOf: self.base)
     }
 }

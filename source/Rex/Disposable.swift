@@ -10,5 +10,5 @@ extension ScopedDisposable: Autodisposable {
 
 extension Disposable {
     /// Returns autodisposable of self.
-    public func autodispose() -> Autodisposable { return ScopedDisposable<Self>(self) }
+    public func autodispose() -> Autodisposable { ScopedDisposable<Self>(self) }
 }

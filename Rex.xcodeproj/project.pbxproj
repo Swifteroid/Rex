@@ -35,6 +35,8 @@
 		17FD03D96CD33E1B243C997C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD0486C6052580C9CA64C9 /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
 		17FD048EEFC4204D423669F8 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		17FD05299734444BF74F330C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		17FD08B5C1A96AFAC92038C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		17FD0A2A6C0CD37A1E4AD786 /* Test.Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Property.swift; sourceTree = "<group>"; };
 		17FD0ACF616620CA54136469 /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
@@ -136,6 +138,8 @@
 				17FD06FEE44FB4A2372F1E37 /* dependency */,
 				E6188A9522C7C0880034E471 /* product */,
 				17FD04C0CBE1EE65EAEDF024 /* source */,
+				17FD05299734444BF74F330C /* .swiftlint.yml */,
+				17FD08B5C1A96AFAC92038C5 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};

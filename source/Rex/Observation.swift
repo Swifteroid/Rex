@@ -29,11 +29,11 @@ extension Signal {
     }
 
     @discardableResult public func observe(_ mode: ObservationMode? = nil, value: ((Value) -> Void)? = nil, failed: ((Error) -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil) -> Disposable? {
-        return self.observe(in: mode).observe(.init(value: value, failed: failed, completed: completed, interrupted: interrupted))
+        self.observe(in: mode).observe(.init(value: value, failed: failed, completed: completed, interrupted: interrupted))
     }
 
     @discardableResult public func observe(_ mode: ObservationMode?, _ value: @escaping (Value) -> Void) -> Disposable? {
-        return self.observe(mode, value: value)
+        self.observe(mode, value: value)
     }
 
     /// Observes events in the given scope during it's lifetime and passes scope into each callback. This a shorthand for the regular
@@ -49,23 +49,23 @@ extension Signal {
     }
 
     @discardableResult public func observe<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope, Value) -> Void) -> Disposable? {
-        return self.observe(mode, in: scope, value: value)
+        self.observe(mode, in: scope, value: value)
     }
 
     @discardableResult public func observe<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, value: ((Scope) -> Void)? = nil, failed: ((Scope, Error) -> Void)? = nil, completed: ((Scope) -> Void)? = nil, interrupted: ((Scope) -> Void)? = nil) -> Disposable? where Value == () {
-        return self.observe(mode, in: scope, value: value.map({ block in { scope, _ in block(scope) } }), failed: failed, completed: completed, interrupted: interrupted)
+        self.observe(mode, in: scope, value: value.map({ block in { scope, _ in block(scope) } }), failed: failed, completed: completed, interrupted: interrupted)
     }
 
     @discardableResult public func observe<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope) -> Void) -> Disposable? where Value == () {
-        return self.observe(mode, in: scope, value: value)
+        self.observe(mode, in: scope, value: value)
     }
 
     @discardableResult public func observe<Scope: AnyObject, V1, V2>(_ mode: ObservationMode? = nil, in scope: Scope?, value: ((Scope, V1, V2) -> Void)? = nil, failed: ((Scope, Error) -> Void)? = nil, completed: ((Scope) -> Void)? = nil, interrupted: ((Scope) -> Void)? = nil) -> Disposable? where Value == (V1, V2) {
-        return self.observe(mode, in: scope, value: value.map({ block in { scope, value in block(scope, value.0, value.1) } }), failed: failed, completed: completed, interrupted: interrupted)
+        self.observe(mode, in: scope, value: value.map({ block in { scope, value in block(scope, value.0, value.1) } }), failed: failed, completed: completed, interrupted: interrupted)
     }
 
     @discardableResult public func observe<Scope: AnyObject, V1, V2>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope, V1, V2) -> Void) -> Disposable? where Value == (V1, V2) {
-        return self.observe(mode, in: scope, value: value)
+        self.observe(mode, in: scope, value: value)
     }
 }
 
@@ -82,11 +82,11 @@ extension SignalProducer {
     }
 
     @discardableResult public func start(_ mode: ObservationMode? = nil, value: ((Value) -> Void)? = nil, failed: ((Error) -> Void)? = nil, completed: (() -> Void)? = nil, interrupted: (() -> Void)? = nil) -> Disposable? {
-        return self.observe(in: mode).start(.init(value: value, failed: failed, completed: completed, interrupted: interrupted))
+        self.observe(in: mode).start(.init(value: value, failed: failed, completed: completed, interrupted: interrupted))
     }
 
     @discardableResult public func start(_ mode: ObservationMode?, _ value: @escaping (Value) -> Void) -> Disposable? {
-        return self.start(mode, value: value)
+        self.start(mode, value: value)
     }
 
     /// Starts observing signal events in the given scope during it's lifetime and passes scope into each callback. This a shorthand for the regular
@@ -102,22 +102,22 @@ extension SignalProducer {
     }
 
     @discardableResult public func start<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope, Value) -> Void) -> Disposable? {
-        return self.start(mode, in: scope, value: value)
+        self.start(mode, in: scope, value: value)
     }
 
     @discardableResult public func start<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, value: ((Scope) -> Void)? = nil, failed: ((Scope, Error) -> Void)? = nil, completed: ((Scope) -> Void)? = nil, interrupted: ((Scope) -> Void)? = nil) -> Disposable? where Value == () {
-        return self.start(mode, in: scope, value: value.map({ block in { scope, _ in block(scope) } }), failed: failed, completed: completed, interrupted: interrupted)
+        self.start(mode, in: scope, value: value.map({ block in { scope, _ in block(scope) } }), failed: failed, completed: completed, interrupted: interrupted)
     }
 
     @discardableResult public func start<Scope: AnyObject>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope) -> Void) -> Disposable? where Value == () {
-        return self.start(mode, in: scope, value: value)
+        self.start(mode, in: scope, value: value)
     }
 
     @discardableResult public func start<Scope: AnyObject, V1, V2>(_ mode: ObservationMode? = nil, in scope: Scope?, value: ((Scope, V1, V2) -> Void)? = nil, failed: ((Scope, Error) -> Void)? = nil, completed: ((Scope) -> Void)? = nil, interrupted: ((Scope) -> Void)? = nil) -> Disposable? where Value == (V1, V2) {
-        return self.start(mode, in: scope, value: value.map({ block in { scope, value in block(scope, value.0, value.1) } }), failed: failed, completed: completed, interrupted: interrupted)
+        self.start(mode, in: scope, value: value.map({ block in { scope, value in block(scope, value.0, value.1) } }), failed: failed, completed: completed, interrupted: interrupted)
     }
 
     @discardableResult public func start<Scope: AnyObject, V1, V2>(_ mode: ObservationMode? = nil, in scope: Scope?, _ value: @escaping (Scope, V1, V2) -> Void) -> Disposable? where Value == (V1, V2) {
-        return self.start(mode, in: scope, value: value)
+        self.start(mode, in: scope, value: value)
     }
 }
