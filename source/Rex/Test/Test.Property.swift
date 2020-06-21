@@ -7,14 +7,27 @@ import Rex
 internal class MutablePropertySpec: Spec {
     override internal func spec() {
         it("must not retain the base when bound to and from") {
-            var isDeallocated = false
+            var value = ""
             let lifetime = Lifetime.make()
+            let target = BindingTarget<String>(lifetime: lifetime.lifetime, action: { value = $0 })
+            let pipe = Signal<String, Never>.pipe()
+
+            var isDeallocated = false
             var foo = Foo() as Foo?
             foo!.reactive.lifetime.observeEnded({ isDeallocated = true })
-            foo!.reactive.bar <~ Signal.empty.producer.prefix(value: "qux")
-            BindingTarget<String>(lifetime: lifetime.lifetime, action: { _ in }) <~ foo!.reactive.bar
+            foo!.reactive.bar <~ pipe.output
+            target <~ foo!.reactive.bar
+
+            pipe.input.send(value: "foo")
+            expect(foo?.bar) == "foo"
+            expect(value) == "foo"
+
             foo = nil
             expect(isDeallocated) == true
+
+            pipe.input.send(value: "bar")
+            expect(foo?.bar).to(beNil())
+            expect(value) == "foo"
         }
     }
 }
