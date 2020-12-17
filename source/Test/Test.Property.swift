@@ -4,7 +4,7 @@ import ReactiveCocoa
 import ReactiveSwift
 import Rex
 
-internal class MutablePropertySpec: Spec {
+internal class MutablePropertySpec: QuickSpec {
     override internal func spec() {
         it("must not retain the base when bound to and from") {
             var value = ""
