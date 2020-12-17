@@ -44,6 +44,7 @@
 		17FD0FCB6FFAB97BD20D7406 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		E6188A9422C7C0880034E471 /* Rex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6188A9D22C7C0880034E471 /* Rex-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rex-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6690F9025AC9A2000DFA311 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Test.xcconfig"; sourceTree = "<group>"; };
 		E6E037C524BE367400AE06EB /* Base-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 				17FD04C0CBE1EE65EAEDF024 /* source */,
 				17FD05299734444BF74F330C /* .swiftlint.yml */,
 				17FD08B5C1A96AFAC92038C5 /* .gitignore */,
+				E6690F9025AC9A2000DFA311 /* Package.swift */,
 			);
 			sourceTree = "<group>";
 		};
