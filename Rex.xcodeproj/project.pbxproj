@@ -274,7 +274,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C524BE367400AE06EB /* Base-Debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
 				SWIFT_VERSION = 5.0;
@@ -285,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C624BE367400AE06EB /* Base-Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
 				SWIFT_VERSION = 5.0;
@@ -296,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 			};
 			name = Debug;
 		};
@@ -303,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 			};
 			name = Release;
 		};
@@ -310,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/Mac";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
@@ -322,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/Mac";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS)",
