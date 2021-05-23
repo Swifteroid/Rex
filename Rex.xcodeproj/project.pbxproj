@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		E6690F8725AC992400DFA311 /* Extension.Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD09BB22922D61FF70A075 /* Extension.Foundation.swift */; };
 		E6690F8825AC992400DFA311 /* Extension.Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0EBE412B4174B99F4FB1 /* Extension.Reactive.swift */; };
 		E6690F8925AC992400DFA311 /* Extension.AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C9E6F41A30AA4EF6CE3 /* Extension.AppKit.swift */; };
+		E690D134267D1F12002FD479 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E690D133267D1F12002FD479 /* Nimble */; };
+		E690D137267D1F2C002FD479 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E690D136267D1F2C002FD479 /* Quick */; };
+		E690D143267D2027002FD479 /* ReactiveCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E690D144267D2027002FD479 /* ReactiveSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,24 +31,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E690D142267D201A002FD479 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E690D143267D2027002FD479 /* ReactiveCocoa.xcframework in Embed Frameworks */,
+				E690D144267D2027002FD479 /* ReactiveSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		17FD02F1B3BF33BEB60BABBD /* Test.Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Property.swift; sourceTree = "<group>"; };
 		17FD03D96CD33E1B243C997C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
 		17FD0486C6052580C9CA64C9 /* framework.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = framework.plist; sourceTree = "<group>"; };
 		17FD05299734444BF74F330C /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		17FD08622BFAD446528AFE14 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
-		17FD08B5C1A96AFAC92038C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		17FD08B5C1A96AFAC92038C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		17FD0931D64C01B2E117B5BC /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
 		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		17FD09BB22922D61FF70A075 /* Extension.Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Foundation.swift; sourceTree = "<group>"; };
 		17FD0C2E393162A3DDB13D61 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		17FD0C9E6F41A30AA4EF6CE3 /* Extension.AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.AppKit.swift; sourceTree = "<group>"; };
 		17FD0EBE412B4174B99F4FB1 /* Extension.Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Reactive.swift; sourceTree = "<group>"; };
-		17FD0F993C06679B32AC2611 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = file.private; path = Cartfile.private; sourceTree = SOURCE_ROOT; };
 		17FD0FCB6FFAB97BD20D7406 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		E6188A9422C7C0880034E471 /* Rex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6188A9D22C7C0880034E471 /* Rex-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rex-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6690F9025AC9A2000DFA311 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		E690D12F267D1E1B002FD479 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		E690D130267D1E1B002FD479 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
+		E690D131267D1E1B002FD479 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = SOURCE_ROOT; };
+		E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveSwift.xcframework; path = Carthage/Build/ReactiveSwift.xcframework; sourceTree = SOURCE_ROOT; };
 		E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Test.xcconfig"; sourceTree = "<group>"; };
 		E6E037C524BE367400AE06EB /* Base-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Base-Debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,18 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E6188A9122C7C0880034E471 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E6188A9A22C7C0880034E471 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */,
+				E690D137267D1F2C002FD479 /* Quick in Frameworks */,
+				E690D134267D1F12002FD479 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +124,8 @@
 		17FD06FEE44FB4A2372F1E37 /* dependency */ = {
 			isa = PBXGroup;
 			children = (
+				E690D13A267D1FC9002FD479 /* framework */,
 				17FD0FCB6FFAB97BD20D7406 /* Cartfile */,
-				17FD0F993C06679B32AC2611 /* Cartfile.private */,
 				17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */,
 			);
 			path = dependency;
@@ -128,9 +146,12 @@
 				17FD06FEE44FB4A2372F1E37 /* dependency */,
 				E6188A9522C7C0880034E471 /* product */,
 				17FD04C0CBE1EE65EAEDF024 /* source */,
-				17FD05299734444BF74F330C /* .swiftlint.yml */,
 				17FD08B5C1A96AFAC92038C5 /* .gitignore */,
+				17FD05299734444BF74F330C /* .swiftlint.yml */,
 				E6690F9025AC9A2000DFA311 /* Package.swift */,
+				E690D130267D1E1B002FD479 /* Package.resolved */,
+				E690D12F267D1E1B002FD479 /* LICENSE.md */,
+				E690D131267D1E1B002FD479 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +162,15 @@
 				E6188A9D22C7C0880034E471 /* Rex-Test.xctest */,
 			);
 			name = product;
+			sourceTree = "<group>";
+		};
+		E690D13A267D1FC9002FD479 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */,
+				E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */,
+			);
+			name = framework;
 			sourceTree = "<group>";
 		};
 		E6E037C124BE367400AE06EB /* configuration */ = {
@@ -157,24 +187,12 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		E6188A8F22C7C0880034E471 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		E6188A9322C7C0880034E471 /* Rex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6188AA622C7C0880034E471 /* Build configuration list for PBXNativeTarget "Rex" */;
 			buildPhases = (
-				E6188A8F22C7C0880034E471 /* Headers */,
 				E6188A9022C7C0880034E471 /* Sources */,
-				E6188A9122C7C0880034E471 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +209,7 @@
 			buildPhases = (
 				E6188A9922C7C0880034E471 /* Sources */,
 				E6188A9A22C7C0880034E471 /* Frameworks */,
+				E690D142267D201A002FD479 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +217,10 @@
 				E6188AA022C7C0880034E471 /* PBXTargetDependency */,
 			);
 			name = "Rex-Test";
+			packageProductDependencies = (
+				E690D133267D1F12002FD479 /* Nimble */,
+				E690D136267D1F2C002FD479 /* Quick */,
+			);
 			productName = RexTests;
 			productReference = E6188A9D22C7C0880034E471 /* Rex-Test.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -227,6 +250,10 @@
 				en,
 			);
 			mainGroup = E6188A8722C7BB250034E471;
+			packageReferences = (
+				E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */,
+				E690D135267D1F2C002FD479 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = E6188A9522C7C0880034E471 /* product */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,7 +301,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C524BE367400AE06EB /* Base-Debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
 				SWIFT_VERSION = 5.0;
@@ -285,7 +312,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C624BE367400AE06EB /* Base-Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swifteroid.rex;
 				SWIFT_VERSION = 5.0;
@@ -296,7 +323,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 			};
 			name = Debug;
 		};
@@ -304,7 +330,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C324BE367400AE06EB /* macOS-Framework.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 			};
 			name = Release;
 		};
@@ -312,11 +337,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/Mac";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Debug;
@@ -325,11 +345,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E6E037C424BE367400AE06EB /* macOS-Test.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)/Mac";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS)",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(inherited).test";
 			};
 			name = Release;
@@ -365,6 +380,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+		E690D135267D1F2C002FD479 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E690D133267D1F12002FD479 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		E690D136267D1F2C002FD479 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E690D135267D1F2C002FD479 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6188A8822C7BB250034E471 /* Project object */;
 }

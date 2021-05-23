@@ -11,4 +11,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="SwiftPackageManagerSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SwiftPackageManagerProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+      </SwiftPackageManagerProjectSettings>
+    </option>
+  </component>
+  <component name="SwiftPackageManagerWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
 </project>
