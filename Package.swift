@@ -10,8 +10,8 @@ let package = Package(
         .library(name: "Rex", targets: ["Rex"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
-        .package(url: "https://github.com/Quick/Quick.git", from: "4.0.0"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "10.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.0"),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveCocoa.git", from: "12.0.0"),
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "7.0.0"),
     ],

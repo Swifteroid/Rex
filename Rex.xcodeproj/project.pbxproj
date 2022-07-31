@@ -10,6 +10,8 @@
 		17FD02B47F39DBECF3F5D1F0 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD08622BFAD446528AFE14 /* Observation.swift */; };
 		17FD09C216EAD69BCBEB2924 /* Test.Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD02F1B3BF33BEB60BABBD /* Test.Property.swift */; };
 		17FD0DE9376496C0EA5DE476 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C2E393162A3DDB13D61 /* Property.swift */; };
+		485723C42898618D00701FC7 /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 485CBD5328985EB60029FDA7 /* ReactiveCocoa */; };
+		485723C52898618D00701FC7 /* ReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48220B3428985F340092D36C /* ReactiveSwift */; };
 		E6188A9E22C7C0880034E471 /* Rex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6188A9422C7C0880034E471 /* Rex.framework */; };
 		E6690F7B25AC991900DFA311 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0931D64C01B2E117B5BC /* Disposable.swift */; };
 		E6690F8725AC992400DFA311 /* Extension.Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD09BB22922D61FF70A075 /* Extension.Foundation.swift */; };
@@ -17,8 +19,6 @@
 		E6690F8925AC992400DFA311 /* Extension.AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FD0C9E6F41A30AA4EF6CE3 /* Extension.AppKit.swift */; };
 		E690D134267D1F12002FD479 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E690D133267D1F12002FD479 /* Nimble */; };
 		E690D137267D1F2C002FD479 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E690D136267D1F2C002FD479 /* Quick */; };
-		E690D143267D2027002FD479 /* ReactiveCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E690D144267D2027002FD479 /* ReactiveSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,21 +31,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E690D142267D201A002FD479 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E690D143267D2027002FD479 /* ReactiveCocoa.xcframework in Embed Frameworks */,
-				E690D144267D2027002FD479 /* ReactiveSwift.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		17FD02F1B3BF33BEB60BABBD /* Test.Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.Property.swift; sourceTree = "<group>"; };
 		17FD03D96CD33E1B243C997C /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = test.plist; sourceTree = "<group>"; };
@@ -54,20 +39,16 @@
 		17FD08622BFAD446528AFE14 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
 		17FD08B5C1A96AFAC92038C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		17FD0931D64C01B2E117B5BC /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
-		17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = file.resolved; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		17FD09BB22922D61FF70A075 /* Extension.Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Foundation.swift; sourceTree = "<group>"; };
 		17FD0C2E393162A3DDB13D61 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		17FD0C9E6F41A30AA4EF6CE3 /* Extension.AppKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.AppKit.swift; sourceTree = "<group>"; };
 		17FD0EBE412B4174B99F4FB1 /* Extension.Reactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.Reactive.swift; sourceTree = "<group>"; };
-		17FD0FCB6FFAB97BD20D7406 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		E6188A9422C7C0880034E471 /* Rex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6188A9D22C7C0880034E471 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6188A9D22C7C0880034E471 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = .xctest; path = "Rex-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6690F9025AC9A2000DFA311 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		E690D12F267D1E1B002FD479 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		E690D130267D1E1B002FD479 /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		E690D131267D1E1B002FD479 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = SOURCE_ROOT; };
-		E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveSwift.xcframework; path = Carthage/Build/ReactiveSwift.xcframework; sourceTree = SOURCE_ROOT; };
 		E690D147267D217F002FD479 /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Application.xcconfig"; sourceTree = "<group>"; };
 		E690D148267D217F002FD479 /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		E690D149267D217F002FD479 /* macOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +62,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		48220B362898615A0092D36C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485723C42898618D00701FC7 /* ReactiveCocoa in Frameworks */,
+				485723C52898618D00701FC7 /* ReactiveSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6188A9A22C7C0880034E471 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,12 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				17FD0C4836910118C39DDCC5 /* Test */,
+				17FD0931D64C01B2E117B5BC /* Disposable.swift */,
 				17FD0C9E6F41A30AA4EF6CE3 /* Extension.AppKit.swift */,
 				17FD09BB22922D61FF70A075 /* Extension.Foundation.swift */,
 				17FD0EBE412B4174B99F4FB1 /* Extension.Reactive.swift */,
-				17FD0931D64C01B2E117B5BC /* Disposable.swift */,
-				17FD0C2E393162A3DDB13D61 /* Property.swift */,
 				17FD08622BFAD446528AFE14 /* Observation.swift */,
+				17FD0C2E393162A3DDB13D61 /* Property.swift */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -124,16 +114,6 @@
 				17FD01A216BAA4B6535E71CF /* info */,
 			);
 			path = accessory;
-			sourceTree = "<group>";
-		};
-		17FD06FEE44FB4A2372F1E37 /* dependency */ = {
-			isa = PBXGroup;
-			children = (
-				E690D13A267D1FC9002FD479 /* framework */,
-				17FD0FCB6FFAB97BD20D7406 /* Cartfile */,
-				17FD0956E5A7CF91D60FE309 /* Cartfile.resolved */,
-			);
-			path = dependency;
 			sourceTree = "<group>";
 		};
 		17FD0C4836910118C39DDCC5 /* Test */ = {
@@ -148,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				17FD06CD2B25A12116504B7D /* accessory */,
-				17FD06FEE44FB4A2372F1E37 /* dependency */,
 				E6188A9522C7C0880034E471 /* product */,
 				17FD04C0CBE1EE65EAEDF024 /* source */,
 				17FD08B5C1A96AFAC92038C5 /* .gitignore */,
@@ -167,15 +146,6 @@
 				E6188A9D22C7C0880034E471 /* .xctest */,
 			);
 			name = product;
-			sourceTree = "<group>";
-		};
-		E690D13A267D1FC9002FD479 /* framework */ = {
-			isa = PBXGroup;
-			children = (
-				E690D138267D1FC3002FD479 /* ReactiveCocoa.xcframework */,
-				E690D139267D1FC3002FD479 /* ReactiveSwift.xcframework */,
-			);
-			name = framework;
 			sourceTree = "<group>";
 		};
 		E690D145267D2164002FD479 /* configuration */ = {
@@ -221,12 +191,17 @@
 			buildConfigurationList = E6188AA622C7C0880034E471 /* Build configuration list for PBXNativeTarget "Rex" */;
 			buildPhases = (
 				E6188A9022C7C0880034E471 /* Sources */,
+				48220B362898615A0092D36C /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Rex;
+			packageProductDependencies = (
+				485CBD5328985EB60029FDA7 /* ReactiveCocoa */,
+				48220B3428985F340092D36C /* ReactiveSwift */,
+			);
 			productName = Rex;
 			productReference = E6188A9422C7C0880034E471 /* Rex.framework */;
 			productType = "com.apple.product-type.framework";
@@ -237,7 +212,6 @@
 			buildPhases = (
 				E6188A9922C7C0880034E471 /* Sources */,
 				E6188A9A22C7C0880034E471 /* Frameworks */,
-				E690D142267D201A002FD479 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +255,8 @@
 			packageReferences = (
 				E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */,
 				E690D135267D1F2C002FD479 /* XCRemoteSwiftPackageReference "Quick" */,
+				485CBD5228985EB60029FDA7 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+				48220B3328985F340092D36C /* XCRemoteSwiftPackageReference "ReactiveSwift" */,
 			);
 			productRefGroup = E6188A9522C7C0880034E471 /* product */;
 			projectDirPath = "";
@@ -330,7 +306,6 @@
 			baseConfigurationReference = E690D14F267D218D002FD479 /* Debug.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/**";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -345,7 +320,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E690D150267D218D002FD479 /* Release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/**";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = accessory/info;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -361,6 +335,7 @@
 			baseConfigurationReference = E690D148267D217F002FD479 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/framework.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Debug;
 		};
@@ -369,6 +344,7 @@
 			baseConfigurationReference = E690D148267D217F002FD479 /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "$(inherited)/framework.plist";
+				MACH_O_TYPE = staticlib;
 			};
 			name = Release;
 		};
@@ -423,12 +399,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		48220B3328985F340092D36C /* XCRemoteSwiftPackageReference "ReactiveSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		485CBD5228985EB60029FDA7 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
 		E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.2.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 		E690D135267D1F2C002FD479 /* XCRemoteSwiftPackageReference "Quick" */ = {
@@ -436,12 +428,22 @@
 			repositoryURL = "https://github.com/Quick/Quick.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		48220B3428985F340092D36C /* ReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48220B3328985F340092D36C /* XCRemoteSwiftPackageReference "ReactiveSwift" */;
+			productName = ReactiveSwift;
+		};
+		485CBD5328985EB60029FDA7 /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 485CBD5228985EB60029FDA7 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
+		};
 		E690D133267D1F12002FD479 /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E690D132267D1F12002FD479 /* XCRemoteSwiftPackageReference "Nimble" */;
