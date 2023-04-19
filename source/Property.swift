@@ -25,7 +25,7 @@ public final class PropertyProxy<Base: AnyObject, Value>: PropertyProtocol {
     public let signal: Signal<Value, Never>
 
     /// The values producer of the property.
-    public var producer: SignalProducer<Value, Never> { self.signal.producer.prefix(value: self.value) }
+    public var producer: SignalProducer<Value, Never> { self.signal.producer.prefix(SignalProducer({ self.value })) }
 
     /// The current value of the property.
     public var value: Value {
@@ -52,7 +52,7 @@ public final class MutablePropertyProxy<Base: AnyObject & ReactiveExtensionsProv
     public let signal: Signal<Value, Never>
 
     /// The values producer of the property.
-    public var producer: SignalProducer<Value, Never> { self.signal.producer.prefix(value: self.value) }
+    public var producer: SignalProducer<Value, Never> { self.signal.producer.prefix(SignalProducer({ self.value })) }
 
     /// Scheduler on which the property gets written. This gets passed into a binding target.
     public let scheduler: Scheduler?
